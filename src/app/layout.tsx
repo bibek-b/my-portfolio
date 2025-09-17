@@ -11,7 +11,7 @@ const oswald = Oswald({
   
 });
 
-export const metaData = {
+export const metadata = {
   title: "Bibek | Gd",
   description: "Full-Stack Developer Portfolio",
   icons: {
