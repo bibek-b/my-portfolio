@@ -3,12 +3,16 @@
 import { motion } from "framer-motion";
 import { FaLaptopCode } from "react-icons/fa6";
 import { LiaRobotSolid } from "react-icons/lia";
-import { blurVariant, letter, pullUpContainer, pullUpVariant, staggerLetter } from "@/animations/Variants";
+import {
+  blurVariant,
+  letter,
+  pullUpContainer,
+  pullUpVariant,
+  staggerLetter,
+} from "@/animations/Variants";
 
 const line1 = "FULL STACK";
 const line2 = "DEVELOPER";
-
-
 
 export default function Hero() {
   return (
@@ -56,7 +60,7 @@ export default function Hero() {
             className="sm:text-xl text-[17px]/7   font-extralight mt-4 opacity-70 tracking-wide sm:text-left
             "
           >
-            Hello! I’m <strong className="font-bold">Bibek</strong> — a Full
+            Hello! I&apos;m <strong className="font-bold">Bibek</strong> — a Full
             Stack Web/App Developer from Nepal. I craft web/app applications
             that are SEO-friendly, lightning-fast, mobile-responsive, and
             visually modern. My work blends clean design with robust

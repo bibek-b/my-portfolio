@@ -89,8 +89,8 @@ export default function Navbar() {
       </div>
       {/* Mobile Menu Button*/}
       <div
-        className={` w-full h-80 absolute  -top-100 transition-all duration-800 md:hidden bg-black/95 ${
-          isOpen && "top-0"
+        className={` w-full h-80 absolute  transition-all duration-800 md:hidden bg-black/95 ${
+          isOpen ? "top-0": "-top-100"
         }`}
       >
         {/* Mobile Dropdown */}

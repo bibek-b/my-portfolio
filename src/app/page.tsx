@@ -29,7 +29,7 @@ export default function HomePage() {
     else if (contactInView) setActiveSection("contact");
    }, 100);
    return () => clearTimeout(timeout);
-  }, [homeInView, aboutInView, projectsInView, contactInView]);
+  }, [homeInView, aboutInView, projectsInView, contactInView, setActiveSection]);
   return (
     <>
       <section id="home" ref={homeRef} className="min-h-screen">
