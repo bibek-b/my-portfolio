@@ -35,18 +35,18 @@ export default function Projects() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
-        className=" gap-6 space-y-6 md:justify-between sm:grid sm:grid-cols-2 justify-center w-full flex-wrap flex-col"
+        className=" gap-6 space-y-6 md:justify-between sm:grid sm:grid-cols-2 justify-center w-full flex-wrap flex-col "
       >
         {projects.map((project, idx) => (
           // <div key={idx}>
           <motion.div
           variants={fadeInUp}
             key={idx}
-            className="border p-10 gap-5 border-white/15 rounded-2xl sm:h-65 flex flex-col cursor-pointer hover:bg-white/5 transition-all duration-500 "
+            className="border p-10 gap-5 border-white/15 rounded-2xl sm:h-78 flex flex-col cursor-pointer hover:bg-white/5 transition-all duration-500 "
           >
             <h3 className="text-2xl">{project.title}</h3>
 
-            <span className="text-white/50 font-light">
+            <span className="text-white/50 font-light tracking-wide">
               {project.description}
             </span>
 
