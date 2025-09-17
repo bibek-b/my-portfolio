@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import PreLoader from '@/components/Preloader';
 import { Oswald } from 'next/font/google';
+import f from '../../public/favicon.ico'
 
 const oswald = Oswald({
   subsets: ['latin'],

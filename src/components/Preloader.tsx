@@ -54,7 +54,7 @@ export default function PreLoader({ children }: { children: React.ReactNode }) {
               className="absolute w-[200px] h-[300px] object-cover z-0"
             /> */}
             <motion.img
-              src="./images/superman.jpg"
+              src="/images/superman.jpg"
               alt="Flying Man"
               initial={{ y: "200%" }}
               animate={{ y: "-200%" }}
