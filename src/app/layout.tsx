@@ -13,7 +13,7 @@ const oswald = Oswald({
 
 export const metaData = {
   title: "Bibek | Gd",
-  description: "Full-stack Developer Portfolio",
+  description: "Full-Stack Developer Portfolio",
   icons: {
     icon: '/favicon.ico'
   }

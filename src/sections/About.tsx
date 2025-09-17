@@ -42,7 +42,7 @@ export default function About() {
                 variants={fadeInUp}
               >
                 <p className="text-white/78 sm:leading-10">
-                  I'm a passionate{" "}
+                  I&apos;m a passionate{" "}
                   <strong className="text-white">full-stack developer</strong>{" "}
                   skilled in JavaScript with Node Js for backend and React
                   Js/Native with Tailwind for frontend. I build scalable, secure
