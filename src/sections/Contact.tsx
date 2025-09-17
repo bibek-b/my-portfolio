@@ -38,7 +38,7 @@ export default function Contact() {
   return (
     <div className="flex flex-col items-center w-full gap-20">
       <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.3}} className="flex flex-col items-center gap-4" id="contact">
-        <h2 className="sm:text-6xl text-4xl">Let's Connect</h2>
+        <h2 className="sm:text-6xl text-4xl">Let&apos;s Connect</h2>
         <div className="w-34 h-px bg-gradient-to-r from-[#00BCD4]/40 to-transparent ml-5" />
 
         <span className="text-white/50 font-light sm:w-140 sm:text-xl text-center">

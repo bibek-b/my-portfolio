@@ -13,7 +13,10 @@ const oswald = Oswald({
 
 export const metaData = {
   title: "Bibek | Gd",
-  description: "Full-stack Developer Portfolio"
+  description: "Full-stack Developer Portfolio",
+  icons: {
+    icon: '/favicon.ico'
+  }
 }
 
 export default function RootLayout({
