@@ -60,12 +60,13 @@ export default function Hero() {
             className="sm:text-xl text-[17px]/7   font-extralight mt-4 opacity-70 tracking-wide sm:text-left
             "
           >
-            Hello! I&apos;m <strong className="font-bold">Bibek</strong> — a Full
-            Stack Web/App Developer from Nepal. I craft web/app applications
-            that are SEO-friendly, lightning-fast, mobile-responsive, and
-            visually modern. My work blends clean design with robust
-            functionality, and I love integrating AI-powered features to take
-            user experiences to the next level.
+            Hi, I&apos;m Bibek Gadel (also known as Bibek BK / Bibek
+            Bishwokarma). I&apos;m a Full Stack Developer specializing in React
+            and React Native. I craft web/app applications that are
+            SEO-friendly, lightning-fast, mobile-responsive, and visually
+            modern. My work blends clean design with robust functionality, and I
+            love integrating AI-powered features to take user experiences to the
+            next level.
           </motion.p>
           <motion.a
             href="./MyResume.pdf"
