@@ -1,16 +1,14 @@
 "use client";
 
+import { isMobile } from "@/utils/Device";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function PreLoader({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setIsMobile(window.innerWidth < 640);
-    }
+    
     const timer = setTimeout(() => {
       setLoading(false);
     }, 3000);
@@ -40,7 +38,7 @@ export default function PreLoader({ children }: { children: React.ReactNode }) {
             <motion.h1
               className=" font-bold tracking-wide sm:text-7xl text-4xl"
               initial={{ y: 25, opacity: 0 }}
-              animate={{ y: isMobile ? -5 : -20, opacity: 1 }}
+              animate={{ y: isMobile() ? -5 : -20, opacity: 1 }}
               transition={{ duration: 1.3, delay: 1 }}
             >
               Software & AI

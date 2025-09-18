@@ -5,6 +5,7 @@ import { LiaLinkedin } from "react-icons/lia";
 import { MdEmail } from "react-icons/md";
 import { motion } from "framer-motion";
 import { fadeInLeft, fadeInRight, fadeInUp } from "@/animations/Variants";
+import { isMobile } from "@/utils/Device";
 
 const personalData = [
   { icon: <MdEmail />, title: "Email", value: "vieekgadel49@gmail.com" },
@@ -24,7 +25,13 @@ const onlineLinks = [
     title: "GitHub Repository",
     url: "http://github.com/bibek-b",
   },
-  { icon: <MdEmail />, title: "Send Email" },
+  {
+    icon: <MdEmail />,
+    title: "Send Email",
+    url: isMobile()
+      ? "mailto:vieekgadel49@gmail.com"
+      : "https://mail.google.com/mail/?view=cm&fs=1&to=vieekgadel49@gmail.com",
+  },
   {
     icon: <BiGlobe />,
     title: "Personal Website",
@@ -32,12 +39,17 @@ const onlineLinks = [
   },
 ];
 
-
-
 export default function Contact() {
   return (
     <div className="flex flex-col items-center w-full gap-20">
-      <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.3}} className="flex flex-col items-center gap-4" id="contact">
+      <motion.div
+        variants={fadeInUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        className="flex flex-col items-center gap-4"
+        id="contact"
+      >
         <h2 className="sm:text-6xl text-4xl">Let&apos;s Connect</h2>
         <div className="w-34 h-px bg-gradient-to-r from-[#00BCD4]/40 to-transparent ml-5" />
 
@@ -48,7 +60,13 @@ export default function Contact() {
       </motion.div>
 
       <div className="flex flex-col sm:flex-row gap-10 tracking-wider items-center">
-        <motion.div variants={fadeInLeft} initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.3}} className="border border-white/15 sm:p-10 p-5 sm:w-130 w-83 rounded sm:h-145 ">
+        <motion.div
+          variants={fadeInLeft}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          className="border border-white/15 sm:p-10 p-5 sm:w-130 w-83 rounded sm:h-145 "
+        >
           <h3 className="sm:text-3xl text-xl font-light">Get In Touch</h3>
           {personalData.map((data) => (
             <div
@@ -66,13 +84,20 @@ export default function Contact() {
           ))}
         </motion.div>
 
-        <motion.div variants={fadeInRight} initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.3}} className="border border-white/15 sm:p-10 p-5 sm:w-130 w-83 rounded">
+        <motion.div
+          variants={fadeInRight}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          className="border border-white/15 sm:p-10 p-5 sm:w-130 w-83 rounded"
+        >
           <h3 className="sm:text-3xl text-xl font-light">Find Me Online</h3>
           {onlineLinks.map((data) => (
             <Link
               href={data?.url || ""}
               target="_blank"
               key={data.title}
+              rel="noopener noreferrer"
               className="flex items-center gap-3 mt-5 border border-white/15 p-2 rounded hover:bg-white/10 cursor-pointer sm:text-[15px] text-sm transition-all duration-200 text-white/85"
             >
               <span className="text-xl">{data.icon}</span>
