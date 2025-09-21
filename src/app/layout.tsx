@@ -12,7 +12,7 @@ const oswald = Oswald({
 });
 
 export const metadata = {
-  title: "Bibek Gadel | Full Stack & React Developer",
+  title: "Bibek Bk | Full Stack & React Developer",
   description:
     "Portfolio of Bibek (Bibek BK / Bibek Bishwokarma / Bibek GD). Full Stack Developer, React & React Native Developer.",
   icons: {

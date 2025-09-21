@@ -60,7 +60,7 @@ export default function Hero() {
             className="sm:text-xl text-[17px]/7   font-extralight mt-4 opacity-70 tracking-wide sm:text-left
             "
           >
-            Hi, I&apos;m Bibek Gadel (also known as Bibek BK / Bibek
+            Hi, I&apos;m Bibek Bk (also known as Bibek Gadel / Bibek
             Bishwokarma). I&apos;m a Full Stack Developer specializing in React
             and React Native. I craft web/app applications that are
             SEO-friendly, lightning-fast, mobile-responsive, and visually
